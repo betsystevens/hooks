@@ -7,8 +7,13 @@ import CountUseReducer from "./CountUseReducer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Count />
-    <CountUseReducer />
+    <div className="flex-col">
+      <h1 style={{ textDecoration: "underline" }}>Counter</h1>
+      <h1>useState</h1>
+      <Count />
+      <h1>useReducer</h1>
+      <CountUseReducer />
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );
